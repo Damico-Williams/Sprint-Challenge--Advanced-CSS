@@ -1,1 +1,29 @@
 // Mixins Here
+
+.mix-btn (@bkclr, @bora, @wdth) {
+    background-color: @bkclr;
+    border-radius: @bora;
+    border:1px solid #23293B;
+    max-width:@wdth;
+    max-height:35px;
+    padding:10px 20px;
+    color:white;
+    font-size: 1.7rem;
+
+    &:hover {
+        background-color: lighten(#23293B,100%)
+      }
+      &:hover {
+        color: darken(white, 100%)
+      }
+}
+
+
+#flexbox1 {
+    display:flex;
+    justify-content: center;
+}
+
+#sizing {
+    font-size: 1.8rem;
+}
